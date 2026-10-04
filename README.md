@@ -1,4 +1,7 @@
-# Fairview Bedding – Free E-commerce Website
+index.html
+style.css
+script.js
+Fairview Bedding – Free E-commerce Website
 
 This is a lightweight, mobile-friendly static e-commerce storefront.
 
