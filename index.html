@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fairview Bedding – premium bedsheets, duvet covers, pillow covers and home furnishing essentials.">
+<title>Fairview Bedding | Premium Home Furnishing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">Free shipping on selected orders • Premium home furnishing</div>
+<header>
+  <a class="logo" href="#home"><span class="logo-mark">F</span><span><b>Fairview</b><small>Bedding</small></span></a>
+  <nav>
+    <a href="#home">Home</a><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="cart-btn" onclick="toggleCart()">🛒 Cart <span id="cartCount">0</span></button>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">COMFORT • STYLE • EVERYDAY LUXURY</p>
+    <h1>Make your bedroom<br><em>feel like home.</em></h1>
+    <p>Beautiful bedding designed for a fresh, comfortable and premium bedroom look.</p>
+    <div class="hero-actions"><a class="btn dark" href="#shop">Shop Collection</a><a class="btn light" href="#collections">Explore</a></div>
+  </div>
+  <div class="hero-art">
+    <div class="bed-shape"><div class="pillow p1"></div><div class="pillow p2"></div><div class="duvet"></div></div>
+    <div class="hero-label">FAIRVIEW<br><span>BEDDING</span></div>
+  </div>
+</section>
+
+<section class="trust">
+  <div><b>Premium Feel</b><span>Comfort-focused fabrics</span></div>
+  <div><b>Modern Designs</b><span>Made for contemporary homes</span></div>
+  <div><b>Easy Ordering</b><span>Quick WhatsApp checkout</span></div>
+  <div><b>Gift Friendly</b><span>Beautiful everyday essentials</span></div>
+</section>
+
+<section id="shop" class="section">
+  <div class="section-head"><div><p class="eyebrow">SHOP FAIRVIEW</p><h2>Featured Products</h2></div><div class="filters"><button class="active" onclick="filterProducts('all',this)">All</button><button onclick="filterProducts('bedsheet',this)">Bedsheets</button><button onclick="filterProducts('pillow',this)">Pillow Covers</button><button onclick="filterProducts('duvet',this)">Duvet Covers</button></div></div>
+  <div id="products" class="grid"></div>
+</section>
+
+<section id="collections" class="collections">
+  <div class="collection c1"><div><p class="eyebrow">BEDDING ESSENTIALS</p><h3>Fresh sheets.<br>Better mornings.</h3><a href="#shop">Shop Bedsheets →</a></div></div>
+  <div class="collection c2"><div><p class="eyebrow">SOFT DETAILS</p><h3>Small details,<br>beautiful rooms.</h3><a href="#shop">Shop Pillow Covers →</a></div></div>
+</section>
+
+<section id="about" class="about section">
+  <div><p class="eyebrow">ABOUT FAIRVIEW</p><h2>Simple luxury for every bedroom.</h2></div>
+  <p>Fairview Bedding brings together practical comfort and elegant design for everyday homes. From bedsheets and duvet covers to pillow covers and bedroom accessories, our collection is made to help you create a clean, inviting space.</p>
+</section>
+
+<section id="contact" class="contact">
+  <div><p class="eyebrow">GET IN TOUCH</p><h2>Ready to refresh your bedroom?</h2><p>Order directly on WhatsApp or contact us for product availability, sizes and bulk requirements.</p></div>
+  <a class="btn light" id="whatsappMain" href="#" target="_blank">Order on WhatsApp</a>
+</section>
+</main>
+
+<footer><div class="logo footer-logo"><span class="logo-mark">F</span><span><b>Fairview</b><small>Bedding</small></span></div><p>© 2026 Fairview Bedding. All rights reserved.</p></footer>
+
+<aside id="cart" class="cart">
+  <div class="cart-head"><h3>Your Cart</h3><button onclick="toggleCart()">✕</button></div>
+  <div id="cartItems"></div>
+  <div class="cart-bottom"><div><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="btn dark full" onclick="checkoutWhatsApp()">Checkout on WhatsApp</button></div>
+</aside>
+<div id="overlay" class="overlay" onclick="toggleCart()"></div>
+<script src="script.js"></script>
+</body>
+</html>
